@@ -1,0 +1,25 @@
+{
+  "decision": "continue unchanged fixed task to 2048 updates, 3 paired seeds",
+  "small32_training_queries": {
+    "B": 1.0,
+    "C8": 1.0,
+    "D8": 1.0
+  },
+  "pilot_runs": [
+    "B-seed0",
+    "C4-seed0",
+    "D8-seed0",
+    "C8-seed0",
+    "B-budget-seed0",
+    "A-seed0",
+    "C2-seed0"
+  ],
+  "reasons": [
+    "All learned precomputation paths fit 32 worlds; head/interface/gradients verified.",
+    "Non-ceiling pilot learning on random worlds; all groups retained, no task search for C superiority.",
+    "2048 budget declared before pilot; seed0 resumes exact schedule."
+  ],
+  "task_adjustments": [],
+  "new_mechanisms": [],
+  "test_model_evaluations_so_far": 0
+}

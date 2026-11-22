@@ -1,0 +1,16 @@
+WSR: State Reorganization and Reusable Computation
+Copyright 2026 Jinhai Ni (GitHub: nijinhai)
+
+This repository contains original research code, experimental reports and
+AI-assisted implementation/documentation. It is an independent research project,
+not an official Mamba implementation or a peer-reviewed publication.
+
+third_party/mamba contains unmodified Python reference files from
+state-spaces/mamba, tag v2.2.5, by Albert Gu, Tri Dao and contributors.
+Their original copyright notices and Apache-2.0 license are retained.
+The functional PyTorch adapter in wsr/pretrained_model.py follows those
+published equations; wsr/official_reference.py independently executes selected
+official Python definitions for validation.
+
+No pretrained model weights or WikiText/PG-19 document bodies are distributed.
+External weights and datasets remain subject to their respective source terms.

@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-17",
+  "objective": "diagnose final-answer-only query composition; no language-model or Dream training",
+  "original_train_rules": 1024,
+  "original_validation_rules": 256,
+  "train_queries": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "heldout_queries": [
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "balanced_diagnostic_rules": 112,
+  "balanced_definition": "four-cycle mapping, four distinct colors, disjoint from original train and validation; never used for optimization",
+  "batch_rules": 16,
+  "queries_per_rule": 8,
+  "main_updates": 8192,
+  "main_lr": 0.001,
+  "optimizer": "Adam",
+  "gradient_clip": 1.0,
+  "milestones": [
+    0,
+    32,
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "stage1": "original padded128 MLP64: overfit32, full8192; lr controls .0003/.003; capacity compact MLP128",
+  "frozen": [
+    "Mamba",
+    "Direct Dream",
+    "original StateReader"
+  ],
+  "future_scope": "minimal shared recurrent query, oracle learning gate before frozen-reader conditions",
+  "no_W1_W2_or_S_plus_P": true,
+  "test_split_used": false
+}

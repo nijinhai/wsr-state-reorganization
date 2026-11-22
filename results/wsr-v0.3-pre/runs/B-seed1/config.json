@@ -1,0 +1,13 @@
+{
+  "mode": "B",
+  "seed": 1,
+  "hidden": 16,
+  "rounds": 8,
+  "penalty": 1.0,
+  "rho": 0.9,
+  "lr": 0.001,
+  "batch": 64,
+  "planned_updates": 1024,
+  "small32": false,
+  "parameters": 2861
+}

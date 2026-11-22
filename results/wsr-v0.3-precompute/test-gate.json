@@ -1,0 +1,5 @@
+{
+  "all_21_runs_complete": true,
+  "updates_each": 2048,
+  "selection": "uniform final checkpoint; no test tuning"
+}

@@ -1,0 +1,44 @@
+{
+  "stage": "interface and offline gradient diagnosis only",
+  "edit_layers": [
+    5,
+    12,
+    19
+  ],
+  "human_layers": [
+    6,
+    13,
+    20
+  ],
+  "histories": [
+    512,
+    2048,
+    8192,
+    32768
+  ],
+  "horizons": [
+    64,
+    512
+  ],
+  "negative_gradient_relative_norms": [
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "positive_and_random_control_relative_norm": 0.001,
+  "B0_checkpoints": [
+    512,
+    1024,
+    2048
+  ],
+  "B0_seed": 0,
+  "dtype": "FP32",
+  "future_used_for_gradient": "offline diagnostic supervision only",
+  "panel": "same two PG validation books at all four histories; first two eligible Wiki validation documents at 512/2048",
+  "gradient_horizon": "full indicated 64 or 512 tokens, no truncation",
+  "gradient_memory": "64-token activation checkpoint chunks for horizon512; cache graph remains connected across all chunks",
+  "Mamba_optimizer_updates": 0,
+  "Dream_optimizer_updates": 0,
+  "test_split_used": false,
+  "new_auxiliary_losses": false
+}

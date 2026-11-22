@@ -1,0 +1,10 @@
+{
+  "name": "C2",
+  "seed": 0,
+  "parameters": 67404,
+  "rounds": 2,
+  "hidden": 128,
+  "small32": false,
+  "planned_updates": 2048,
+  "labels_per_update": 128
+}

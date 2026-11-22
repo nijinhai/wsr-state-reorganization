@@ -1,0 +1,9 @@
+{
+  "main_runs": 21,
+  "optimizer_updates": 43008,
+  "final_answer_labels": 5505024,
+  "optimization_seconds": 176.57897689798847,
+  "C1_alias": "B",
+  "test_gate": "test-gate.json",
+  "new_mechanisms": []
+}

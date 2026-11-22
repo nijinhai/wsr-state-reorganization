@@ -1,0 +1,45 @@
+{
+  "base": "official frozen state-spaces/mamba2-130m, pinned v0.1 revision",
+  "architecture": "D Direct Dream, original StateDream; no workspace or memory slots",
+  "layer": 12,
+  "rounds": 8,
+  "history_window": 128,
+  "corruption": false,
+  "training": "T1",
+  "prediction_horizon": 64,
+  "cycles": 2,
+  "interval": 256,
+  "batch_documents": 1,
+  "effective_LM_targets_per_update": 128,
+  "precision": "FP32",
+  "lr": 0.0003,
+  "milestones": [
+    512,
+    1024,
+    2048
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "auxiliary_weights": "B0=0; S/P separately calibrated from initial Dream-gradient norms and train-only smoke trials; see calibration.json",
+  "P_distances": [
+    128,
+    512,
+    2048
+  ],
+  "P_segment_tokens": 64,
+  "P_candidates": 8,
+  "P_temperature": 0.1,
+  "train_documents_requested": {
+    "wikitext103": 128,
+    "pg19": 16
+  },
+  "validation_wiki_requested": 16,
+  "test_split": "sealed",
+  "seed_expansion_gate": "finite nonzero gradients, actual Dream updates, finite held-out NLL; not positive-NLL filtering",
+  "equal_budget": "same optimizer steps, LM document/boundary schedule, target tokens, and seeds; auxiliary compute is additional and measured",
+  "initialization": "fresh matched Dream initialization, not resumed from the v0.1 small-pool checkpoint",
+  "BPTT": "64-token future in each cycle; detach between cycles, preserve state values"
+}

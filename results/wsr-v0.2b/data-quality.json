@@ -1,0 +1,32 @@
+{
+  "train": {
+    "rules": 1024,
+    "symbolic_accuracy": 1.0,
+    "label_counts": [
+      3021,
+      3006,
+      3021,
+      3240
+    ]
+  },
+  "validation": {
+    "rules": 256,
+    "symbolic_accuracy": 1.0,
+    "label_counts": [
+      771,
+      771,
+      738,
+      792
+    ]
+  },
+  "balanced": {
+    "rules": 112,
+    "symbolic_accuracy": 1.0,
+    "label_counts": [
+      336,
+      336,
+      336,
+      336
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "markdown_link_relocations": true,
+  "unavailable_archival_references": [
+    {
+      "document": "results/wsr-v0.2a/REPORT.md",
+      "archival_reference": "calibration.json"
+    },
+    {
+      "document": "results/wsr-v0.2a/FINDINGS.md",
+      "archival_reference": "results.json"
+    },
+    {
+      "document": "results/wsr-v0.2a/FINDINGS.md",
+      "archival_reference": "scope-update.json"
+    },
+    {
+      "document": "results/wsr-v0.2a-diagnostics/FINDINGS.md",
+      "archival_reference": "verification.json"
+    },
+    {
+      "document": "results/wsr-v0.2b/FINDINGS.md",
+      "archival_reference": "verification.json"
+    },
+    {
+      "document": "results/wsr-v0.3-pre/FINDINGS.md",
+      "archival_reference": "results.json"
+    }
+  ],
+  "weights_or_text_distributed": false
+}

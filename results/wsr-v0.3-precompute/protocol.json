@@ -1,0 +1,78 @@
+{
+  "nodes": 6,
+  "colors": 3,
+  "hops": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "width_per_start": 32,
+  "update_hidden": 128,
+  "B_budget_hidden": 1024,
+  "configs": {
+    "A": [
+      "A",
+      0,
+      128
+    ],
+    "B": [
+      "B",
+      1,
+      128
+    ],
+    "B-budget": [
+      "B-budget",
+      1,
+      1024
+    ],
+    "C2": [
+      "C",
+      2,
+      128
+    ],
+    "C4": [
+      "C",
+      4,
+      128
+    ],
+    "C8": [
+      "C",
+      8,
+      128
+    ],
+    "D8": [
+      "D",
+      8,
+      128
+    ]
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "updates": 2048,
+  "pilot_updates": 512,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "clip": 1.0,
+  "batch_worlds": 16,
+  "queries_per_world": 8,
+  "answer_labels_per_update": 128,
+  "selection": "one fixed task; pilot gates correctness and learning, not C superiority",
+  "task": "random no-self-link functional graph; balanced three colors; 1-4 hops",
+  "query_split": "(start+hops)%3 == 0 held out, other pairs train; all starts/hops trained",
+  "data_split": "disjoint link graphs; all three color rotations remain together",
+  "supervision": "final color CE only; no intermediate, coverage, round encoding, anytime",
+  "readout": "gather W[start], then hop-selected linear color classifier shared across starts",
+  "W_prior": "one 32-dimensional output slot per start, no per-hop state or transition wiring",
+  "update": "global dense MLP sees ALL raw facts and ALL W each round; no enforced one-hop step",
+  "C1": "exactly B: same initialization, forward, optimizer, and training schedule; reuse run",
+  "B_budget": "single wider update, same W/readout, preparation dense MACs matched to C8",
+  "D": "query-conditioned initial/update; separate computation per query, same readout",
+  "device": "CPU FP32 single thread",
+  "test_policy": "evaluate models only after all 21 main runs finish",
+  "no_new_mechanisms": true,
+  "Mamba_loaded": false
+}

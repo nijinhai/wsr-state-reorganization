@@ -1,0 +1,8 @@
+{
+  "formal_updates": 512,
+  "allocated_schedule_updates": 1024,
+  "reason": "A seed0 at512: train87.84%, validation-known88.65%, validation-new87.5%; baseline learns but has headroom. Choose bounded matched budget before any seed expansion or final test evaluation.",
+  "selection_source": "A-only pilot learning curve",
+  "small32_functional_budget": 1024,
+  "test_used": false
+}

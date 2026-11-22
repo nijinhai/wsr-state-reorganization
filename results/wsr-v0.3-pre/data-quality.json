@@ -1,0 +1,154 @@
+{
+  "train": {
+    "examples": 8008,
+    "answer_counts": [
+      616,
+      616,
+      616,
+      616,
+      616,
+      616,
+      616,
+      616,
+      616,
+      616,
+      616,
+      616,
+      616
+    ],
+    "distinct": 4004,
+    "reread": 4004,
+    "symbolic_accuracy": 1.0,
+    "uniform_accuracy": 0.07692307692307693,
+    "mode_baseline_accuracy": 0.07692307692307693,
+    "unique_queries": 8008,
+    "query_buckets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "validation_known": {
+    "examples": 520,
+    "answer_counts": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "distinct": 260,
+    "reread": 260,
+    "symbolic_accuracy": 1.0,
+    "uniform_accuracy": 0.07692307692307693,
+    "mode_baseline_accuracy": 0.07692307692307693,
+    "unique_queries": 520,
+    "query_buckets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "validation_new": {
+    "examples": 520,
+    "answer_counts": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "distinct": 260,
+    "reread": 260,
+    "symbolic_accuracy": 1.0,
+    "uniform_accuracy": 0.07692307692307693,
+    "mode_baseline_accuracy": 0.07692307692307693,
+    "unique_queries": 520,
+    "query_buckets": [
+      6,
+      7
+    ]
+  },
+  "test_known": {
+    "examples": 520,
+    "answer_counts": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "distinct": 260,
+    "reread": 260,
+    "symbolic_accuracy": 1.0,
+    "uniform_accuracy": 0.07692307692307693,
+    "mode_baseline_accuracy": 0.07692307692307693,
+    "unique_queries": 520,
+    "query_buckets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "test_new": {
+    "examples": 520,
+    "answer_counts": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "distinct": 260,
+    "reread": 260,
+    "symbolic_accuracy": 1.0,
+    "uniform_accuracy": 0.07692307692307693,
+    "mode_baseline_accuracy": 0.07692307692307693,
+    "unique_queries": 520,
+    "query_buckets": [
+      8,
+      9
+    ]
+  }
+}

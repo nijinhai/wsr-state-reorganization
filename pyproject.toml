@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wsr-research"
+version = "0.3.0"
+description = "Controlled experiments on frozen Mamba-2 state editing and query-blind reusable precomputation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Jinhai Ni"}]
+dependencies = ["torch>=2.4"]
+
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.8", "numpy>=1.26"]
+pretrained = ["tokenizers>=0.21", "einops>=0.8", "numpy>=1.26"]
+v02 = ["pyarrow>=18"]
+
+[project.urls]
+Repository = "https://github.com/nijinhai/wsr-state-reorganization"
+Issues = "https://github.com/nijinhai/wsr-state-reorganization/issues"
+
+[tool.setuptools.packages.find]
+include = ["wsr*"]

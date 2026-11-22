@@ -1,0 +1,39 @@
+[
+  {
+    "directory": "artifacts/wsr-v0.3-pre-affine-pilot",
+    "runs": 5,
+    "updates": 5120,
+    "answer_draws": 327680
+  },
+  {
+    "directory": "artifacts/wsr-v0.3-pre-count4-control",
+    "runs": 5,
+    "updates": 2560,
+    "answer_draws": 163840
+  },
+  {
+    "directory": "artifacts/wsr-v0.3-pre-fourstep-pilot",
+    "runs": 5,
+    "updates": 8192,
+    "answer_draws": 524288
+  },
+  {
+    "directory": "artifacts/wsr-v0.3-pre-pointer-large-pilot",
+    "runs": 1,
+    "updates": 4096,
+    "answer_draws": 262144
+  },
+  {
+    "directory": "artifacts/wsr-v0.3-pre-small-pool-pilot",
+    "runs": 5,
+    "updates": 8192,
+    "answer_draws": 524288
+  },
+  {
+    "directory": "artifacts/wsr-v0.3-pre",
+    "formal_runs": 12,
+    "formal_updates": 6144,
+    "formal_answer_draws": 393216,
+    "small32_functional_updates": 1024
+  }
+]

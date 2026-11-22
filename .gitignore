@@ -1,0 +1,22 @@
+# Generated experimental outputs are separate from published evidence in results/.
+artifacts/
+.venv*/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.parquet
+*.arrow
+*.part
+*.log
+*.tmp

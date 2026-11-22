@@ -1,0 +1,7 @@
+readout,link_accuracy,color_accuracy,all8_facts_accuracy,seen_queries_symbolic_accuracy,heldout_queries_symbolic_accuracy
+raw_reader,1.0,0.9990234375,0.99609375,0.9990234375,0.9990234375
+edited_reader,1.0,0.9990234375,0.99609375,0.9990234375,0.9990234375
+raw_axes,1.0,1.0,1.0,1.0,1.0
+edited_axes,1.0,1.0,1.0,1.0,1.0
+history_context,0.67578125,0.4228515625,0.0,0.3564453125,0.3525390625
+visible_token_positions,1.0,1.0,1.0,1.0,1.0

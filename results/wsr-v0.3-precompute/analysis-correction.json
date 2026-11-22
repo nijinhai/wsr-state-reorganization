@@ -1,0 +1,8 @@
+{
+  "change": "Permutation diagnosis now reports mapped query groups and excludes mapped training graphs",
+  "reason": "A relabeled held query may become a trained pair; relabeled graphs may match training graphs",
+  "original_diagnostics_preserved": "artifacts/wsr-v0.3-precompute/results-before-permutation-split-clarification.json",
+  "model_updates": 0,
+  "main_accuracies_changed": false,
+  "benchmarks_rerun": false
+}

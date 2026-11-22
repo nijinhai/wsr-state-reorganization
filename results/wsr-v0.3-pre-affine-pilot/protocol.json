@@ -1,0 +1,46 @@
+{
+  "task": "four affine transforms mod4 at explicit query addresses; distinct or a-b-a-c reread",
+  "models": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "workspace_hidden": 16,
+  "training_rounds": 4,
+  "coverage_lambda": 1.0,
+  "coverage_rho": 0.9,
+  "hard_mask": "exclude previous attention argmax slots; original bank not erased",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "clip": 1.0,
+  "updates": 2048,
+  "batch": 64,
+  "milestones": [
+    0,
+    128,
+    256,
+    512,
+    1024,
+    1536,
+    2048
+  ],
+  "supervision": "final color CE only; reference paths never passed to model or optimizer",
+  "program_control_prior": "query provides current address by a fixed external cursor; no intermediate values or transformation execution supplied",
+  "trained_read_rounds": "fixed four shared reads/updates; no random-depth training",
+  "heads": "answer head sees workspace only; no direct bank/history bypass",
+  "device": "CPU FP32, one intra-op thread",
+  "Mamba_loaded": false,
+  "Mamba_Dream_updates": 0,
+  "old_test_split_used": false,
+  "synthetic_test": "labels structurally verified, never used for gate or selection; model evaluation after all main runs",
+  "round_encoding_extrapolation": "rounds beyond four reuse final trained embedding",
+  "coverage_selection": "lambda/rho fixed before pilot, no diversity-based tuning",
+  "train_examples": 8192,
+  "query_embedding_initial_std": 0.02
+}

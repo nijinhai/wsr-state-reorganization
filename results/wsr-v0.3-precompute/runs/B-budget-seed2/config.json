@@ -1,0 +1,10 @@
+{
+  "name": "B-budget",
+  "seed": 2,
+  "parameters": 460748,
+  "rounds": 1,
+  "hidden": 1024,
+  "small32": false,
+  "planned_updates": 2048,
+  "labels_per_update": 128
+}

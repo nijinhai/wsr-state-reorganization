@@ -1,0 +1,16 @@
+seed,intervention,original_accuracy_hops2_3,counterfactual_accuracy
+0,zero,0.25,
+0,swap_rules,0.9575892686843872,
+0,reverse_first_update,0.0,
+0,preserve_node,1.0,1.0
+0,change_node,0.0,1.0
+1,zero,0.25,
+1,swap_rules,0.9575892686843872,
+1,reverse_first_update,0.0,
+1,preserve_node,1.0,1.0
+1,change_node,0.0,1.0
+2,zero,0.25,
+2,swap_rules,0.9575892686843872,
+2,reverse_first_update,0.0,
+2,preserve_node,1.0,1.0
+2,change_node,0.0,1.0

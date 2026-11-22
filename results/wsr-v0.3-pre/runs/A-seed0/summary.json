@@ -1,0 +1,76 @@
+{
+  "config": {
+    "mode": "A",
+    "seed": 0,
+    "hidden": 16,
+    "rounds": 8,
+    "penalty": 1.0,
+    "rho": 0.9,
+    "lr": 0.001,
+    "batch": 64,
+    "planned_updates": 1024,
+    "small32": false,
+    "parameters": 2733
+  },
+  "updates": 512,
+  "complete": true,
+  "parameter_update_norm": 10.984708481581569,
+  "finite_nonzero_gradients": true,
+  "training_seconds": 4.152068769559264,
+  "answer_draws": 32768,
+  "evaluation": {
+    "train": {
+      "all": {
+        "accuracy": 0.8783716559410095,
+        "ce": 0.8123238682746887,
+        "examples": 8008
+      },
+      "distinct": {
+        "accuracy": 0.8816183805465698,
+        "ce": 0.8105311393737793,
+        "examples": 4004
+      },
+      "reread": {
+        "accuracy": 0.8751248717308044,
+        "ce": 0.8141166567802429,
+        "examples": 4004
+      }
+    },
+    "validation_known": {
+      "all": {
+        "accuracy": 0.8865384459495544,
+        "ce": 0.8159593343734741,
+        "examples": 520
+      },
+      "distinct": {
+        "accuracy": 0.8807692527770996,
+        "ce": 0.8145456314086914,
+        "examples": 260
+      },
+      "reread": {
+        "accuracy": 0.892307698726654,
+        "ce": 0.8173728585243225,
+        "examples": 260
+      }
+    },
+    "validation_new": {
+      "all": {
+        "accuracy": 0.875,
+        "ce": 0.8140982389450073,
+        "examples": 520
+      },
+      "distinct": {
+        "accuracy": 0.892307698726654,
+        "ce": 0.8111690878868103,
+        "examples": 260
+      },
+      "reread": {
+        "accuracy": 0.857692301273346,
+        "ce": 0.81702721118927,
+        "examples": 260
+      }
+    }
+  },
+  "formal_budget_updates": 512,
+  "allocated_schedule_ceiling": 1024
+}

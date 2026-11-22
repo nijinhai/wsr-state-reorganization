@@ -1,0 +1,282 @@
+[
+  {
+    "step": 0,
+    "evaluation": {
+      "train": {
+        "all": {
+          "accuracy": 0.07692307978868484,
+          "ce": 2.5717101097106934,
+          "examples": 8008
+        },
+        "distinct": {
+          "accuracy": 0.07692307978868484,
+          "ce": 2.5716216564178467,
+          "examples": 4004
+        },
+        "reread": {
+          "accuracy": 0.07692307978868484,
+          "ce": 2.571798801422119,
+          "examples": 4004
+        }
+      },
+      "validation_known": {
+        "all": {
+          "accuracy": 0.07692307978868484,
+          "ce": 2.5717837810516357,
+          "examples": 520
+        },
+        "distinct": {
+          "accuracy": 0.07692307978868484,
+          "ce": 2.5718443393707275,
+          "examples": 260
+        },
+        "reread": {
+          "accuracy": 0.07692307978868484,
+          "ce": 2.571723461151123,
+          "examples": 260
+        }
+      },
+      "validation_new": {
+        "all": {
+          "accuracy": 0.07692307978868484,
+          "ce": 2.571680784225464,
+          "examples": 520
+        },
+        "distinct": {
+          "accuracy": 0.07692307978868484,
+          "ce": 2.5715620517730713,
+          "examples": 260
+        },
+        "reread": {
+          "accuracy": 0.07692307978868484,
+          "ce": 2.5718002319335938,
+          "examples": 260
+        }
+      }
+    }
+  },
+  {
+    "step": 64,
+    "evaluation": {
+      "train": {
+        "all": {
+          "accuracy": 0.1514735221862793,
+          "ce": 2.5256247520446777,
+          "examples": 8008
+        },
+        "distinct": {
+          "accuracy": 0.150599405169487,
+          "ce": 2.5241730213165283,
+          "examples": 4004
+        },
+        "reread": {
+          "accuracy": 0.1523476541042328,
+          "ce": 2.527076482772827,
+          "examples": 4004
+        }
+      },
+      "validation_known": {
+        "all": {
+          "accuracy": 0.14230769872665405,
+          "ce": 2.5268523693084717,
+          "examples": 520
+        },
+        "distinct": {
+          "accuracy": 0.13076923787593842,
+          "ce": 2.5263426303863525,
+          "examples": 260
+        },
+        "reread": {
+          "accuracy": 0.1538461595773697,
+          "ce": 2.5273618698120117,
+          "examples": 260
+        }
+      },
+      "validation_new": {
+        "all": {
+          "accuracy": 0.1519230753183365,
+          "ce": 2.5254580974578857,
+          "examples": 520
+        },
+        "distinct": {
+          "accuracy": 0.16153846681118011,
+          "ce": 2.523383140563965,
+          "examples": 260
+        },
+        "reread": {
+          "accuracy": 0.14230769872665405,
+          "ce": 2.5275332927703857,
+          "examples": 260
+        }
+      }
+    }
+  },
+  {
+    "step": 128,
+    "evaluation": {
+      "train": {
+        "all": {
+          "accuracy": 0.16820679605007172,
+          "ce": 2.013044595718384,
+          "examples": 8008
+        },
+        "distinct": {
+          "accuracy": 0.16958041489124298,
+          "ce": 2.0117006301879883,
+          "examples": 4004
+        },
+        "reread": {
+          "accuracy": 0.16683316230773926,
+          "ce": 2.0143885612487793,
+          "examples": 4004
+        }
+      },
+      "validation_known": {
+        "all": {
+          "accuracy": 0.16923077404499054,
+          "ce": 2.002837657928467,
+          "examples": 520
+        },
+        "distinct": {
+          "accuracy": 0.16153846681118011,
+          "ce": 2.005136489868164,
+          "examples": 260
+        },
+        "reread": {
+          "accuracy": 0.17692308127880096,
+          "ce": 2.0005385875701904,
+          "examples": 260
+        }
+      },
+      "validation_new": {
+        "all": {
+          "accuracy": 0.16346153616905212,
+          "ce": 2.022496461868286,
+          "examples": 520
+        },
+        "distinct": {
+          "accuracy": 0.16153846681118011,
+          "ce": 2.020331621170044,
+          "examples": 260
+        },
+        "reread": {
+          "accuracy": 0.16538462042808533,
+          "ce": 2.0246613025665283,
+          "examples": 260
+        }
+      }
+    }
+  },
+  {
+    "step": 256,
+    "evaluation": {
+      "train": {
+        "all": {
+          "accuracy": 0.35314685106277466,
+          "ce": 1.4860392808914185,
+          "examples": 8008
+        },
+        "distinct": {
+          "accuracy": 0.3461538553237915,
+          "ce": 1.487806797027588,
+          "examples": 4004
+        },
+        "reread": {
+          "accuracy": 0.3601398468017578,
+          "ce": 1.4842714071273804,
+          "examples": 4004
+        }
+      },
+      "validation_known": {
+        "all": {
+          "accuracy": 0.3365384638309479,
+          "ce": 1.4859565496444702,
+          "examples": 520
+        },
+        "distinct": {
+          "accuracy": 0.3153846263885498,
+          "ce": 1.4893238544464111,
+          "examples": 260
+        },
+        "reread": {
+          "accuracy": 0.35769230127334595,
+          "ce": 1.4825890064239502,
+          "examples": 260
+        }
+      },
+      "validation_new": {
+        "all": {
+          "accuracy": 0.35576921701431274,
+          "ce": 1.493402361869812,
+          "examples": 520
+        },
+        "distinct": {
+          "accuracy": 0.38461539149284363,
+          "ce": 1.4935603141784668,
+          "examples": 260
+        },
+        "reread": {
+          "accuracy": 0.32692307233810425,
+          "ce": 1.4932441711425781,
+          "examples": 260
+        }
+      }
+    }
+  },
+  {
+    "step": 512,
+    "evaluation": {
+      "train": {
+        "all": {
+          "accuracy": 0.8961039185523987,
+          "ce": 0.8191433548927307,
+          "examples": 8008
+        },
+        "distinct": {
+          "accuracy": 0.9030969142913818,
+          "ce": 0.816771388053894,
+          "examples": 4004
+        },
+        "reread": {
+          "accuracy": 0.8891108632087708,
+          "ce": 0.8215155005455017,
+          "examples": 4004
+        }
+      },
+      "validation_known": {
+        "all": {
+          "accuracy": 0.9038461446762085,
+          "ce": 0.8217182755470276,
+          "examples": 520
+        },
+        "distinct": {
+          "accuracy": 0.9192307591438293,
+          "ce": 0.8188740015029907,
+          "examples": 260
+        },
+        "reread": {
+          "accuracy": 0.8884615302085876,
+          "ce": 0.8245627880096436,
+          "examples": 260
+        }
+      },
+      "validation_new": {
+        "all": {
+          "accuracy": 0.8903846144676208,
+          "ce": 0.8238484859466553,
+          "examples": 520
+        },
+        "distinct": {
+          "accuracy": 0.9192307591438293,
+          "ce": 0.8187816739082336,
+          "examples": 260
+        },
+        "reread": {
+          "accuracy": 0.8615384697914124,
+          "ce": 0.8289153575897217,
+          "examples": 260
+        }
+      }
+    }
+  }
+]

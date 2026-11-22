@@ -1,0 +1,50 @@
+{
+  "base": "unchanged frozen official Mamba2-130M and v0.2a checkpoints",
+  "Dream_optimizer_updates": 0,
+  "backbone_optimizer_updates": 0,
+  "amplitude": {
+    "groups": [
+      "B0",
+      "P"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "checkpoint": 2048,
+    "scales": [
+      -0.25,
+      0.0,
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      1.5
+    ],
+    "formula": "H0 + scale * (H8 - H0)",
+    "future_tokens": 2048,
+    "validation_only": true,
+    "panel": "two Wiki documents (one curve, one outside), at 512/2048; both PG books at 8192/32768",
+    "no_periodic_scan": true
+  },
+  "S_levels": [
+    "visible text facts / position-preserving token readout",
+    "unedited SSM: original reader versus axis-preserving fixed projection",
+    "frozen S-seed0 edited SSM: identical readouts; history GRU context checked separately"
+  ],
+  "S_probe": "linear ridge to 4 link + 4 color facts, symbolic query execution on predicted facts; no Dream training",
+  "P_probe": "train-only ridge feature prediction; same-document InfoNCE evaluation; visible last64 frozen encoding versus raw-state readouts",
+  "ridge_penalties": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "probe_model_seed": 0,
+  "projection_seed": 20261117,
+  "test_split_used": false,
+  "S_plus_P": false,
+  "W1_W2": false
+}
